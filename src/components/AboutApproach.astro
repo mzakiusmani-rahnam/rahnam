@@ -1,0 +1,223 @@
+<section class="about-approach">
+  <div class="container">
+
+    <div class="about-approach__intro reveal">
+      <div class="about-approach__label">
+        <span class="eyebrow">HOW I WORK</span>
+      </div>
+
+      <div class="about-approach__main">
+        <h2>
+          Strategy should make
+          <span>execution clearer.</span>
+        </h2>
+
+        <p>
+          RAHNAM combines strategic thinking with practical execution —
+          using the right technology, data and processes to solve real
+          business problems.
+        </p>
+      </div>
+    </div>
+
+
+    <div class="about-approach__list">
+
+      <article class="approach-item reveal">
+        <div class="approach-item__number">01</div>
+
+        <div class="approach-item__content">
+          <h3>Start with the business problem.</h3>
+
+          <p>
+            Technology should support the business, not dictate how the
+            business operates. The first step is understanding what is
+            actually holding growth back.
+          </p>
+        </div>
+
+        <span class="approach-item__arrow">↗</span>
+      </article>
+
+
+      <article class="approach-item reveal">
+        <div class="approach-item__number">02</div>
+
+        <div class="approach-item__content">
+          <h3>Connect strategy to execution.</h3>
+
+          <p>
+            A strategy only creates value when it can be translated into
+            clear priorities, practical actions and measurable outcomes.
+          </p>
+        </div>
+
+        <span class="approach-item__arrow">↗</span>
+      </article>
+
+
+      <article class="approach-item reveal">
+        <div class="approach-item__number">03</div>
+
+        <div class="approach-item__content">
+          <h3>Use technology with purpose.</h3>
+
+          <p>
+            Platforms, automation and AI should remove friction, improve
+            decision-making and create capacity for the team — not add
+            another layer of complexity.
+          </p>
+        </div>
+
+        <span class="approach-item__arrow">↗</span>
+      </article>
+
+
+      <article class="approach-item reveal">
+        <div class="approach-item__number">04</div>
+
+        <div class="approach-item__content">
+          <h3>Leave the business stronger.</h3>
+
+          <p>
+            The goal is sustainable improvement: clearer systems,
+            stronger processes, better customer experiences and a team
+            that can continue moving forward.
+          </p>
+        </div>
+
+        <span class="approach-item__arrow">↗</span>
+      </article>
+
+    </div>
+
+
+    <div class="about-approach__footer">
+      <span>05 — RAHNAM</span>
+      <span>How I Work</span>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .about-approach {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .about-approach__intro {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding: 80px 0 56px;
+  }
+
+  .about-approach__label {
+    padding-top: 12px;
+  }
+
+  .about-approach__main {
+    max-width: 1000px;
+  }
+
+  .about-approach h2 {
+    max-width: 900px;
+    margin: 0 0 var(--space-xl);
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+
+  .about-approach h2 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .about-approach__main > p {
+    max-width: 720px;
+    margin: 0;
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    line-height: 1.7;
+    color: var(--color-text-muted);
+  }
+
+  .about-approach__list {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .approach-item {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) 80px;
+    gap: var(--space-lg);
+    align-items: start;
+    padding-block: 32px;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .approach-item__number {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    color: var(--color-text-muted);
+  }
+
+  .approach-item__content {
+    max-width: 760px;
+  }
+
+  .approach-item h3 {
+    margin: 0 0 var(--space-md);
+    font-size: clamp(1.7rem, 2.8vw, 2.8rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+  }
+
+  .approach-item p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--color-text-muted);
+  }
+
+  .approach-item__arrow {
+    justify-self: end;
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+  }
+
+  .about-approach__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .about-approach__intro {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      padding: 72px 0 56px;
+    }
+
+    .approach-item {
+      grid-template-columns: 50px minmax(0, 1fr);
+      gap: 16px;
+      padding-block: 28px;
+    }
+
+    .approach-item__arrow {
+      display: none;
+    }
+  }
+</style>

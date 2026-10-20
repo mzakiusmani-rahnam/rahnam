@@ -1,0 +1,354 @@
+/* =========================================================
+   RAHNAM — Global Design System
+   Deep Navy Editorial + Quiet Motion
+   ========================================================= */
+
+:root {
+  /* Colors */
+  --color-bg: #0b1118;
+  --color-bg-soft: #111923;
+  --color-bg-light: #f3f2ee;
+  --color-surface: #18212b;
+
+  --color-text: #f2f3f1;
+  --color-text-dark: #111820;
+  --color-text-muted: #9da5ae;
+  --color-text-muted-dark: #66717b;
+  --color-text-dark-muted: var(--color-text-muted-dark);
+
+  --color-border: #26303a;
+  --color-border-light: #d8d8d2;
+
+  --color-accent: #c8c1b4;
+  --color-accent-dark: #a9a092;
+
+  /* Typography */
+  --font-sans:
+    "Inter",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  --font-serif:
+    "Cormorant Garamond",
+    Georgia,
+    serif;
+
+  /* Layout */
+  --container-width: 1240px;
+  --container-padding: 32px;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 14px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 52px;
+  --space-2xl: 80px;
+  --space-3xl: 112px;
+  --space-4xl: 140px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 180ms var(--ease-standard);
+  --transition-medium: 350ms var(--ease-standard);
+  --transition-slow: 700ms var(--ease-standard);
+
+  /* Borders & Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+}
+
+
+/* =========================================================
+   Reset
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: clamp(3rem, 7vw, 7rem);
+  line-height: 0.98;
+}
+
+h2 {
+  font-size: clamp(2.25rem, 4.5vw, 4.5rem);
+  line-height: 1.02;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  line-height: 1.15;
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+
+/* =========================================================
+   Layout
+   ========================================================= */
+
+.container {
+  width: min(calc(100% - (var(--container-padding) * 2)),
+      var(--container-width));
+
+  margin-inline: auto;
+}
+
+.section {
+  position: relative;
+  padding-block: var(--space-3xl);
+}
+
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  min-height: 48px;
+  padding: 0 22px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  background: transparent;
+  color: var(--color-text);
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition:
+    background var(--transition-medium),
+    color var(--transition-medium),
+    border-color var(--transition-medium),
+    transform var(--transition-medium);
+}
+
+.button:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-text-dark);
+  transform: translateY(-2px);
+}
+
+.button--light {
+  border-color: var(--color-border-light);
+  color: var(--color-text-dark);
+}
+
+.button--light:hover {
+  border-color: var(--color-text-dark);
+  background: var(--color-text-dark);
+  color: var(--color-bg-light);
+}
+
+
+/* =========================================================
+   Eyebrow / Labels
+   ========================================================= */
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: var(--space-md);
+
+  color: var(--color-text-muted);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  background: currentColor;
+}
+
+
+/* =========================================================
+   Light Sections
+   ========================================================= */
+
+.section--light {
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+.section--light p {
+  color: var(--color-text-muted-dark);
+}
+
+.section--light .eyebrow {
+  color: var(--color-text-muted-dark);
+}
+
+
+/* =========================================================
+   Quiet Motion
+   ========================================================= */
+
+.reveal {
+  transition:
+    opacity var(--transition-slow),
+    transform var(--transition-slow);
+}
+
+.has-js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.has-js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   Focus States
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   Reduced Motion
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 20px;
+
+    --space-3xl: 96px;
+    --space-4xl: 120px;
+  }
+
+  .section {
+    padding-block: var(--space-2xl);
+  }
+}

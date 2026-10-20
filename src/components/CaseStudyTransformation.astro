@@ -1,0 +1,283 @@
+<section class="case-study-transformation">
+  <div class="container">
+    <div class="case-study-transformation__header reveal">
+      <div class="case-study-transformation__label">
+        <span class="eyebrow">The Transformation</span>
+      </div>
+
+      <div class="case-study-transformation__intro">
+        <h2>
+          Turning disconnected
+          <span>activity into a connected system.</span>
+        </h2>
+
+        <p>
+          The transformation was not about one platform, one campaign or one
+          isolated improvement. It was about connecting the commercial,
+          technical and operational pieces of the business.
+        </p>
+      </div>
+    </div>
+
+    <div class="case-study-transformation__grid">
+      <div class="case-study-transformation__visual reveal">
+        <div class="case-study-transformation__image">
+          <img
+            src="/images/case-study-commerce.png"
+            alt="Ecommerce workspace with a digital storefront, international market map and performance dashboards."
+          />
+        </div>
+      </div>
+
+      <div class="case-study-transformation__content reveal">
+        <article class="transformation-item">
+          <span class="transformation-item__number">01</span>
+
+          <div>
+            <h3>Commerce foundation</h3>
+
+            <p>
+              Rebuilt the ecommerce foundation around Shopify, creating a more
+              flexible platform for growth, international commerce and ongoing
+              optimisation.
+            </p>
+          </div>
+        </article>
+
+        <article class="transformation-item">
+          <span class="transformation-item__number">02</span>
+
+          <div>
+            <h3>Customer experience</h3>
+
+            <p>
+              Improved the storefront experience across navigation, product
+              discovery, mobile UX and conversion-focused customer journeys.
+            </p>
+          </div>
+        </article>
+
+        <article class="transformation-item">
+          <span class="transformation-item__number">03</span>
+
+          <div>
+            <h3>International growth</h3>
+
+            <p>
+              Strengthened the digital infrastructure required to support
+              international customers, markets, currencies and fulfilment.
+            </p>
+          </div>
+        </article>
+
+        <article class="transformation-item">
+          <span class="transformation-item__number">04</span>
+
+          <div>
+            <h3>Operations & AI</h3>
+
+            <p>
+              Introduced better processes, reporting and AI-enabled workflows to
+              reduce repetitive work and make ecommerce operations more
+              efficient.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="case-study-transformation__footer reveal">
+      <span>RAHNAM / TRANSFORMATION</span>
+
+      <span class="case-study-transformation__footer-line"></span>
+
+      <span>01</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .case-study-transformation {
+    position: relative;
+    overflow: hidden;
+    padding: 64px 0 0;
+    background: var(--color-bg-light);
+    color: var(--color-text-dark);
+  }
+
+  /* Header */
+
+  .case-study-transformation__header {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding-bottom: 44px;
+  }
+
+  .case-study-transformation__label {
+    padding-top: 10px;
+  }
+
+  .case-study-transformation__intro {
+    max-width: 980px;
+  }
+
+  .case-study-transformation h2 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    font-weight: 450;
+  }
+
+  .case-study-transformation h2 span {
+    display: block;
+    color: var(--color-text-muted-dark);
+  }
+
+  .case-study-transformation__intro > p {
+    max-width: 680px;
+    margin-top: 28px;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  /* Main grid */
+
+  .case-study-transformation__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 88px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  /* Image */
+
+  .case-study-transformation__visual {
+    min-width: 0;
+  }
+
+  .case-study-transformation__image {
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #d9d9d6;
+  }
+
+  .case-study-transformation__image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-study-transformation__caption {
+    display: block;
+    margin-top: 14px;
+    color: var(--color-text-muted-dark);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  /* Transformation items */
+
+  .case-study-transformation__content {
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .transformation-item {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: var(--space-md);
+    padding-block: 24px;
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  
+  .transformation-item:last-child {
+    padding-bottom: 12px;
+  }
+
+  .transformation-item__number {
+    color: var(--color-text-muted-dark);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+  }
+
+  .transformation-item h3 {
+    margin: 0 0 var(--space-sm);
+    font-size: clamp(1.6rem, 2.5vw, 2.3rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-weight: 450;
+  }
+
+  .transformation-item p {
+    max-width: 470px;
+    margin: 0;
+    color: var(--color-text-muted-dark);
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  /* Footer */
+
+  .case-study-transformation__footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 14px;
+    margin-top: 64px;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border-light);
+    color: var(--color-text-muted-dark);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+
+  .case-study-transformation__footer-line {
+    width: 50px;
+    height: 1px;
+    background: var(--color-border-light);
+  }
+
+  /* Mobile */
+
+  @media (max-width: 768px) {
+    .case-study-transformation {
+      padding-block: 64px;
+    }
+
+    .case-study-transformation__header {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      padding-bottom: 64px;
+    }
+
+    .case-study-transformation__label {
+      padding-top: 0;
+    }
+
+    .case-study-transformation h2 {
+      font-size: clamp(2.8rem, 12vw, 4.5rem);
+    }
+
+    .case-study-transformation__grid {
+      grid-template-columns: 1fr;
+      gap: 64px;
+    }
+
+    .case-study-transformation__content {
+      border-top: 0;
+    }
+
+    .transformation-item {
+      padding-block: 26px;
+    }
+  }
+</style>

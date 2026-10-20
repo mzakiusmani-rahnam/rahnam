@@ -1,0 +1,120 @@
+<section class="case-studies-hero">
+  <div class="container">
+
+    <div class="case-studies-hero__grid">
+
+      <div class="case-studies-hero__label reveal">
+        <span class="eyebrow">Case Studies</span>
+      </div>
+
+      <div class="case-studies-hero__content reveal">
+
+        <h1>
+          Where strategy becomes
+          <span>measurable progress.</span>
+        </h1>
+
+        <p>
+          Real ecommerce transformation across commerce, technology,
+          customer experience and operations — built around the problems
+          businesses actually need to solve.
+        </p>
+
+        <a href="#featured-case-study" class="button">
+          View featured case study
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="case-studies-hero__meta">
+      <span>01 — RAHNAM</span>
+      <span>Case Studies</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .case-studies-hero {
+    position: relative;
+    min-height: 44vh;
+    display: flex;
+    align-items: center;
+    padding: 64px 0 0;
+    background: var(--color-bg);
+    overflow: hidden;
+  }
+
+  .case-studies-hero__grid {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .case-studies-hero__label {
+    padding-top: 12px;
+  }
+
+  .case-studies-hero__content {
+    max-width: 1000px;
+  }
+
+  .case-studies-hero h1 {
+    max-width: 900px;
+  }
+
+  .case-studies-hero h1 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .case-studies-hero__content p {
+    max-width: 680px;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .case-studies-hero__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    .case-studies-hero {
+      min-height: auto;
+      padding-block: 92px 80px;
+    }
+
+    .case-studies-hero__grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .case-studies-hero__label {
+      padding-top: 0;
+    }
+
+    .case-studies-hero__content p {
+      font-size: 1rem;
+    }
+
+    .case-studies-hero__meta {
+      margin-top: 64px;
+    }
+  }
+</style>

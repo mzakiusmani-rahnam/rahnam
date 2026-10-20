@@ -1,0 +1,113 @@
+<section class="insights-cta">
+  <div class="container">
+
+    <div class="insights-cta__content reveal">
+
+      <div class="insights-cta__label">
+        <span class="eyebrow">START A CONVERSATION</span>
+      </div>
+
+      <div class="insights-cta__main">
+        <h2>
+          Have a challenge
+          <span>worth thinking through?</span>
+        </h2>
+
+        <p>
+          Insights are useful when they lead to better decisions.
+          If something you're reading connects with a challenge in
+          your business, let's talk about it.
+        </p>
+
+        <a href="/contact" class="button button--light">
+          Start a conversation
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="insights-cta__footer">
+      <span>04 — RAHNAM</span>
+      <span>Insights</span>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .insights-cta {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-light);
+    color: var(--color-text-dark);
+  }
+
+  .insights-cta__content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding-block: 56px 40px;
+  }
+
+  .insights-cta__label {
+    padding-top: 12px;
+  }
+
+  .insights-cta__main {
+    max-width: 1000px;
+  }
+
+  .insights-cta h2 {
+    max-width: 900px;
+    margin: 0 0 24px;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+
+  .insights-cta h2 span {
+    display: block;
+    color: var(--color-text-dark-muted);
+  }
+
+  .insights-cta p {
+    max-width: 700px;
+    margin: 0 0 24px;
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    line-height: 1.7;
+    color: var(--color-text-dark-muted);
+  }
+
+  .insights-cta .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .insights-cta__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 16px;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-dark-muted);
+  }
+
+  @media (max-width: 768px) {
+    .insights-cta__content {
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-block: 40px 32px;
+}
+
+    .insights-cta h2 {
+      font-size: clamp(3rem, 11vw, 5rem);
+    }
+  }
+</style>

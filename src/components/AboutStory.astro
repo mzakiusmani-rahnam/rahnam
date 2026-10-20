@@ -1,0 +1,119 @@
+<section class="about-story">
+  <div class="container">
+
+    <div class="about-story__intro reveal">
+      <div class="about-story__label">
+        <span class="eyebrow">THE THINKING BEHIND RAHNAM</span>
+      </div>
+
+      <div class="about-story__main">
+        <h2>
+          Building digital businesses
+          <span>that scale.</span>
+        </h2>
+
+        <div class="about-story__copy">
+          <p>
+            For more than two decades, I have worked at the intersection
+            of ecommerce, technology and business operations.
+          </p>
+
+          <p>
+            My focus is simple: create sustainable growth, improve
+            customer experience and build systems that scale.
+          </p>
+
+          <p>
+            RAHNAM brings that experience together to help digital
+            businesses make better decisions, simplify complexity and
+            turn strategy into practical progress.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-story__footer">
+      <span>02 — RAHNAM</span>
+      <span>Perspective</span>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .about-story {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-light);
+    color: var(--color-text-dark);
+  }
+
+  .about-story__intro {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+  gap: var(--space-xl);
+  padding: 72px 0 48px;
+}
+
+  .about-story__label {
+    padding-top: 12px;
+  }
+
+  .about-story__main {
+    max-width: 1000px;
+  }
+
+  .about-story h2 {
+    max-width: 900px;
+    margin: 0 0 36px;
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+
+  .about-story h2 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .about-story__copy {
+    max-width: 720px;
+  }
+
+  .about-story__copy p {
+    margin: 0 0 16px;
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    line-height: 1.7;
+    color: var(--color-text-dark-muted);
+  }
+
+  .about-story__copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-story__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-md);
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-dark-muted);
+  }
+
+  @media (max-width: 768px) {
+   .about-story__intro {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  padding: 48px 0 36px;
+}
+
+.about-story h2 {
+  margin-bottom: 28px;
+}
+  }
+</style>

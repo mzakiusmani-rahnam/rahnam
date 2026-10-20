@@ -1,0 +1,134 @@
+<section class="case-study-cta">
+  <div class="container">
+
+    <div class="case-study-cta__content reveal">
+
+      <div class="case-study-cta__label">
+        <span class="eyebrow">Continue the Conversation</span>
+      </div>
+
+      <div class="case-study-cta__main">
+
+        <h2>
+          Have a digital business
+          <span>that needs to move forward?</span>
+        </h2>
+
+        <p>
+          RAHNAM works with businesses that need clearer direction,
+          stronger digital foundations and practical leadership across
+          commerce, technology and growth.
+        </p>
+
+        <a href="/contact" class="button">
+          Start a conversation
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="case-study-cta__footer">
+      <span>05 — RAHNAM</span>
+      <span>Case Studies</span>
+    </div>
+
+  </div>
+</section>
+
+<style>
+ .case-study-cta {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 64px 0 0;
+}
+
+  .case-study-cta__content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+  }
+
+  .case-study-cta__label {
+    padding-top: 12px;
+  }
+
+  .case-study-cta__main {
+    max-width: 1000px;
+  }
+
+  .case-study-cta h2 {
+    max-width: 900px;
+    margin: 0 0 var(--space-xl);
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    font-weight: 450;
+  }
+
+  .case-study-cta h2 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .case-study-cta__main > p {
+    max-width: 680px;
+    margin: 0 0 var(--space-lg);
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .case-study-cta .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .case-study-cta__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+
+    .case-study-cta {
+      padding-block: 64px;
+    }
+
+    .case-study-cta__content {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .case-study-cta__label {
+      padding-top: 0;
+    }
+
+    .case-study-cta h2 {
+      margin-bottom: var(--space-lg);
+      font-size: clamp(2.8rem, 12vw, 4.5rem);
+    }
+
+    .case-study-cta__main > p {
+      margin-bottom: var(--space-lg);
+      font-size: 1rem;
+    }
+
+    .case-study-cta__footer {
+      margin-top: 64px;
+    }
+  }
+</style>

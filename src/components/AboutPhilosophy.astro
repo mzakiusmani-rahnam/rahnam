@@ -1,0 +1,204 @@
+<section class="about-philosophy">
+    <div class="container">
+        <div class="about-philosophy__intro reveal">
+            <div class="about-philosophy__label">
+                <span class="eyebrow">LEADERSHIP PHILOSOPHY</span>
+            </div>
+
+            <div class="about-philosophy__main">
+                <h2>
+                    Better businesses are
+                    <span>built through better</span>
+                    <span>decisions.</span>
+                </h2>
+
+                <p>
+                    Technology, data and growth only create value when they work
+                    together around the needs of the business and its customers.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-philosophy__grid">
+            <article class="philosophy-card reveal">
+                <div class="philosophy-card__number">01</div>
+
+                <div class="philosophy-card__content">
+                    <h3>Customers before channels.</h3>
+
+                    <p>
+                        Every digital decision should ultimately improve the
+                        customer experience. Channels are tools — the customer
+                        remains the focus.
+                    </p>
+                </div>
+            </article>
+
+            <article class="philosophy-card reveal">
+                <div class="philosophy-card__number">02</div>
+
+                <div class="philosophy-card__content">
+                    <h3>Decisions backed by data.</h3>
+
+                    <p>
+                        Data provides context for better decisions. The goal is
+                        not more reporting, but clearer insight into what is
+                        happening and what should happen next.
+                    </p>
+                </div>
+            </article>
+
+            <article class="philosophy-card reveal">
+                <div class="philosophy-card__number">03</div>
+
+                <div class="philosophy-card__content">
+                    <h3>Build systems people can use.</h3>
+
+                    <p>
+                        Good technology should simplify work rather than create
+                        another layer of complexity. Systems need to work for
+                        the people using them every day.
+                    </p>
+                </div>
+            </article>
+
+            <article class="philosophy-card reveal">
+                <div class="philosophy-card__number">04</div>
+
+                <div class="philosophy-card__content">
+                    <h3>AI should enhance judgement.</h3>
+
+                    <p>
+                        AI should remove repetitive work, improve speed and
+                        create better insight — while leaving important
+                        decisions to people.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="about-philosophy__footer">
+            <span>03 — RAHNAM</span>
+            <span>Philosophy</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-philosophy {
+        position: relative;
+        overflow: hidden;
+        background: var(--color-bg);
+        color: var(--color-text);
+    }
+
+    .about-philosophy__intro {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding: 80px 0 52px;
+}
+
+    .about-philosophy__label {
+        padding-top: 12px;
+    }
+
+    .about-philosophy__main {
+        max-width: 1000px;
+    }
+
+    .about-philosophy h2 {
+        max-width: 900px;
+        margin: 0 0 var(--space-xl);
+        font-size: clamp(3rem, 6vw, 6rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+        font-weight: 500;
+    }
+
+    .about-philosophy h2 span {
+        display: block;
+        color: var(--color-text-muted);
+    }
+
+    .about-philosophy__main > p {
+        max-width: 700px;
+        margin: 0;
+        font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+        line-height: 1.7;
+        color: var(--color-text-muted);
+    }
+
+    .about-philosophy__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid var(--color-border);
+        border-left: 1px solid var(--color-border);
+    }
+
+    .philosophy-card {
+    min-height: 250px;
+    padding: 32px;
+    border-right: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .philosophy-card__number {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        color: var(--color-text-muted);
+    }
+
+    .philosophy-card__content {
+        max-width: 520px;
+    }
+
+    .philosophy-card h3 {
+        margin: 0 0 var(--space-md);
+        font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+        line-height: 1.05;
+        letter-spacing: -0.025em;
+        font-weight: 500;
+    }
+
+    .philosophy-card p {
+        max-width: 480px;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--color-text-muted);
+    }
+
+    .about-philosophy__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-md);
+    margin-top: 0;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+    @media (max-width: 768px) {
+        .about-philosophy__intro {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: 56px 0 36px;
+}
+
+        .about-philosophy__grid {
+    grid-template-columns: 1fr;
+}
+
+.philosophy-card {
+    min-height: 210px;
+    padding: 28px 24px;
+}
+    }
+</style>

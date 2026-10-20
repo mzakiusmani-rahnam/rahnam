@@ -1,0 +1,326 @@
+<section class="services-expertise">
+
+  <div class="container">
+
+    <div class="services-expertise__intro reveal">
+
+      <div class="services-expertise__label">
+        <span class="eyebrow">Areas of Expertise</span>
+      </div>
+
+      <div class="services-expertise__heading">
+
+        <h2>
+          Where strategy meets
+          <span>practical execution.</span>
+        </h2>
+
+        <p>
+          RAHNAM brings commercial thinking, digital expertise and hands-on
+          execution across the areas that have the greatest impact on growth.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="services-expertise__list">
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">01</div>
+
+        <div class="expertise-item__main">
+          <h3>Ecommerce Strategy</h3>
+
+          <p>
+            Defining priorities, identifying opportunities and building
+            practical roadmaps that connect commercial goals with digital
+            execution.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Strategy &amp; planning
+        </div>
+
+      </article>
+
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">02</div>
+
+        <div class="expertise-item__main">
+          <h3>Commerce &amp; Technology</h3>
+
+          <p>
+            Building and improving digital commerce platforms through
+            Shopify, migrations, integrations and smarter systems.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Platforms &amp; systems
+        </div>
+
+      </article>
+
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">03</div>
+
+        <div class="expertise-item__main">
+          <h3>Conversion &amp; CRO</h3>
+
+          <p>
+            Finding friction across the customer journey and improving
+            the digital experience to turn more traffic into meaningful
+            commercial outcomes.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Performance &amp; optimisation
+        </div>
+
+      </article>
+
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">04</div>
+
+        <div class="expertise-item__main">
+          <h3>Customer Experience</h3>
+
+          <p>
+            Connecting discovery, purchase and post-purchase experiences
+            to make digital commerce easier for customers and stronger
+            for the business.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Journey &amp; experience
+        </div>
+
+      </article>
+
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">05</div>
+
+        <div class="expertise-item__main">
+          <h3>International Growth</h3>
+
+          <p>
+            Helping businesses expand into new markets across currencies,
+            payments, shipping, technology and operational foundations.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Markets &amp; expansion
+        </div>
+
+      </article>
+
+
+      <article class="expertise-item reveal">
+
+        <div class="expertise-item__number">06</div>
+
+        <div class="expertise-item__main">
+          <h3>AI &amp; Automation</h3>
+
+          <p>
+            Identifying practical opportunities to use AI and automation
+            to reduce repetitive work, improve efficiency and create
+            leverage.
+          </p>
+        </div>
+
+        <div class="expertise-item__category">
+          Efficiency &amp; scale
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+  .services-expertise {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+
+  /* Intro */
+
+  .services-expertise__intro {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+  gap: var(--space-xl);
+  padding-top: 72px;
+  padding-bottom: 28px;
+}
+
+  .services-expertise__label {
+    padding-top: 10px;
+  }
+
+  .services-expertise__heading {
+    max-width: 980px;
+  }
+
+  .services-expertise h2 {
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
+  .services-expertise h2 span {
+    display: block;
+    color: var(--color-text-muted-dark);
+  }
+
+  .services-expertise__heading > p {
+    max-width: 680px;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+
+  /* Expertise list */
+
+  .services-expertise__list {
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .expertise-item {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) 220px;
+    gap: var(--space-lg);
+    align-items: start;
+
+    padding-block: 40px;
+
+    border-bottom: 1px solid var(--color-border-light);
+
+    transition:
+      padding-left var(--transition-medium),
+      background var(--transition-medium);
+  }
+
+  .expertise-item:hover {
+    padding-left: 14px;
+    background: rgba(17, 24, 32, 0.025);
+  }
+
+  .expertise-item__number {
+    padding-top: 6px;
+    color: var(--color-text-muted-dark);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+
+  .expertise-item__main {
+    max-width: 720px;
+  }
+
+  .expertise-item h3 {
+    margin-bottom: 14px;
+    font-size: clamp(1.8rem, 3vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .expertise-item p {
+    max-width: 650px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .expertise-item__category {
+    padding-top: 7px;
+    color: var(--color-text-muted-dark);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+
+  /* Mobile */
+
+  @media (max-width: 768px) {
+
+    .services-expertise__intro {
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-top: 56px;
+  padding-bottom: 32px;
+}
+
+    .services-expertise__label {
+      padding-top: 0;
+    }
+
+    .services-expertise h2 {
+      margin-bottom: 28px;
+    }
+
+    .services-expertise__heading > p {
+      font-size: 1rem;
+    }
+
+    .expertise-item {
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: var(--space-md);
+      padding-block: 32px;
+    }
+
+    .expertise-item:hover {
+      padding-left: 8px;
+    }
+
+    .expertise-item__number {
+      padding-top: 5px;
+    }
+
+    .expertise-item__main {
+      max-width: none;
+    }
+
+    .expertise-item h3 {
+      font-size: clamp(1.75rem, 8vw, 2.4rem);
+    }
+
+    .expertise-item p {
+      font-size: 0.95rem;
+    }
+
+    .expertise-item__category {
+      grid-column: 2;
+      padding-top: 0;
+      text-align: left;
+    }
+
+  }
+
+</style>

@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const {
+  title = "RAHNAM — Strategy. Commerce. Digital.",
+  description = "RAHNAM is a strategic consulting practice focused on ecommerce, digital business, and growth.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta name="description" content={description} />
+
+    <meta name="theme-color" content="#0b1118" />
+
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <slot />
+    <Footer />
+    <script>
+      document.documentElement.classList.add("has-js");
+      const revealElements = document.querySelectorAll(".reveal");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        revealElements.forEach((element) => element.classList.add("is-visible"));
+      } else {
+        const revealObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "0px 0px -8% 0px", threshold: 0.05 },
+        );
+
+        revealElements.forEach((element) => revealObserver.observe(element));
+      }
+    </script>
+  </body>
+</html>

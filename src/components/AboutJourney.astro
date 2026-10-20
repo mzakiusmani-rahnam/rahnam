@@ -1,0 +1,205 @@
+<section class="about-journey">
+    <div class="container">
+        <div class="about-journey__intro reveal">
+            <div class="about-journey__label">
+                <span class="eyebrow">THE JOURNEY</span>
+            </div>
+
+            <div class="about-journey__main">
+                <h2>
+                    <span>Experience built across</span>
+                    <span>business, commerce and</span>
+                    <span>technology.</span>
+                </h2>
+
+                <p>
+                    Each stage of the journey has strengthened the ability to
+                    connect data, operations, technology and commercial growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-journey__steps">
+            <article class="journey-step reveal">
+                <div class="journey-step__number">01</div>
+
+                <div class="journey-step__content">
+                    <span class="journey-step__eyebrow">FOUNDATION</span>
+                    <h3>Business Intelligence</h3>
+                    <p>
+                        Learning to turn data into insight, understand business
+                        performance and make decisions with greater clarity.
+                    </p>
+                </div>
+            </article>
+
+            <article class="journey-step reveal">
+                <div class="journey-step__number">02</div>
+
+                <div class="journey-step__content">
+                    <span class="journey-step__eyebrow">EXECUTION</span>
+                    <h3>Ecommerce Operations</h3>
+                    <p>
+                        Moving closer to the customer and the day-to-day
+                        mechanics of digital commerce, marketplaces, processes
+                        and teams.
+                    </p>
+                </div>
+            </article>
+
+            <article class="journey-step reveal">
+                <div class="journey-step__number">03</div>
+
+                <div class="journey-step__content">
+                    <span class="journey-step__eyebrow">DIRECTION</span>
+                    <h3>Digital Strategy</h3>
+                    <p>
+                        Connecting ecommerce, technology, customer experience
+                        and growth into a clearer digital roadmap.
+                    </p>
+                </div>
+            </article>
+
+            <article class="journey-step reveal">
+                <div class="journey-step__number">04</div>
+
+                <div class="journey-step__content">
+                    <span class="journey-step__eyebrow">LEADERSHIP</span>
+                    <h3>Business Leadership</h3>
+                    <p>
+                        Bringing strategy and execution together to build
+                        stronger digital businesses and create sustainable
+                        growth.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="about-journey__footer">
+            <span>04 — RAHNAM</span>
+            <span>Journey</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about-journey {
+        position: relative;
+        overflow: hidden;
+        background: var(--color-bg-light);
+        color: var(--color-text-dark);
+    }
+
+    .about-journey__intro {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding-block: 32px;
+}
+
+    .about-journey__label {
+        padding-top: 12px;
+    }
+
+    .about-journey__main {
+        max-width: 1000px;
+    }
+
+    .about-journey h2 {
+        max-width: 900px;
+        margin: 0 0 var(--space-lg);
+        font-size: clamp(3rem, 5vw, 5.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+        font-weight: 500;
+    }
+
+    .about-journey h2 span {
+        display: block;
+    }
+
+    .about-journey h2 span:not(:first-child) {
+        color: var(--color-text-dark-muted);
+    }
+
+    .about-journey__main > p {
+        max-width: 700px;
+        margin: 0;
+        font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+        line-height: 1.7;
+        color: var(--color-text-dark-muted);
+    }
+
+    .about-journey__steps {
+        border-top: 1px solid var(--color-border-light);
+    }
+
+    .journey-step {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: var(--space-lg);
+    padding-block: 22px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+    .journey-step__number {
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        color: var(--color-text-dark-muted);
+    }
+
+    .journey-step__content {
+        max-width: 760px;
+    }
+
+    .journey-step__eyebrow {
+        display: block;
+        margin-bottom: var(--space-sm);
+        font-size: 0.68rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--color-text-dark-muted);
+    }
+
+    .journey-step h3 {
+        margin: 0 0 var(--space-md);
+        font-size: clamp(1.8rem, 3vw, 3rem);
+        line-height: 1;
+        letter-spacing: -0.025em;
+        font-weight: 500;
+    }
+
+    .journey-step p {
+        max-width: 620px;
+        margin: 0;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--color-text-dark-muted);
+    }
+
+    .about-journey__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: var(--space-md);
+        border-top: 1px solid var(--color-border-light);
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--color-text-dark-muted);
+    }
+
+    @media (max-width: 768px) {
+    .about-journey__intro {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        padding-block: 48px;
+    }
+
+    .journey-step {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 16px;
+        padding-block: 20px;
+    }
+}
+</style>

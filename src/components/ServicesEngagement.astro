@@ -1,0 +1,301 @@
+<section class="services-engagement">
+  <div class="container">
+
+    <div class="services-engagement__intro reveal">
+
+      <div class="services-engagement__label">
+        <span class="eyebrow">Ways to Engage</span>
+      </div>
+
+      <div class="services-engagement__heading">
+        <h2>
+          The right level of expertise
+          <span>for the challenge.</span>
+        </h2>
+
+        <p>
+          Not every business needs the same kind of support. RAHNAM can
+          provide focused strategic advice, ongoing leadership or hands-on
+          transformation depending on what the business needs next.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="services-engagement__list">
+
+      <article class="engagement-item reveal">
+
+        <div class="engagement-item__number">
+          01
+        </div>
+
+        <div class="engagement-item__content">
+          <span class="engagement-item__label">
+            Advisory
+          </span>
+
+          <h3>
+            Clarity when you need to make an important decision.
+          </h3>
+
+          <p>
+            Strategic advice, digital assessments, growth planning and
+            focused problem-solving for specific challenges or decisions.
+          </p>
+        </div>
+
+        <div class="engagement-item__arrow" aria-hidden="true">
+          ↗
+        </div>
+
+      </article>
+
+
+      <article class="engagement-item reveal">
+
+        <div class="engagement-item__number">
+          02
+        </div>
+
+        <div class="engagement-item__content">
+          <span class="engagement-item__label">
+            Fractional Leadership
+          </span>
+
+          <h3>
+            Senior digital leadership without the cost of a full-time executive.
+          </h3>
+
+          <p>
+            Ongoing strategic direction, prioritisation, commercial thinking
+            and coordination across teams, technology and external partners.
+          </p>
+        </div>
+
+        <div class="engagement-item__arrow" aria-hidden="true">
+          ↗
+        </div>
+
+      </article>
+
+
+      <article class="engagement-item reveal">
+
+        <div class="engagement-item__number">
+          03
+        </div>
+
+        <div class="engagement-item__content">
+          <span class="engagement-item__label">
+            Transformation
+          </span>
+
+          <h3>
+            Hands-on leadership when something needs to change.
+          </h3>
+
+          <p>
+            From ecommerce transformation and platform work to operational
+            improvement, market expansion and AI-enabled execution.
+          </p>
+        </div>
+
+        <div class="engagement-item__arrow" aria-hidden="true">
+          ↗
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .services-engagement {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+
+  /* Intro */
+
+  .services-engagement__intro {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+  gap: var(--space-xl);
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+
+  .services-engagement__label {
+    padding-top: 12px;
+  }
+
+  .services-engagement__heading {
+    max-width: 980px;
+  }
+
+  .services-engagement h2 {
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+
+  .services-engagement h2 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .services-engagement__heading > p {
+    max-width: 700px;
+    margin-bottom: 0;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+
+  /* Engagement list */
+
+  .services-engagement__list {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .engagement-item {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr) 80px;
+    gap: var(--space-lg);
+    align-items: start;
+    padding-block: 36px;
+    border-bottom: 1px solid var(--color-border);
+    transition:
+      background var(--transition-medium),
+      padding-left var(--transition-medium);
+  }
+
+  .engagement-item:hover {
+    padding-left: 18px;
+    background: var(--color-bg-soft);
+  }
+
+
+  /* Number */
+
+  .engagement-item__number {
+    padding-top: 8px;
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+  }
+
+
+  /* Content */
+
+  .engagement-item__content {
+    max-width: 850px;
+  }
+
+  .engagement-item__label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-text-muted);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .engagement-item h3 {
+    max-width: 800px;
+    margin-bottom: 16px;
+    font-size: clamp(2rem, 3.4vw, 3.4rem);
+    line-height: 1.05;
+  }
+
+  .engagement-item p {
+    max-width: 650px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+
+  /* Arrow */
+
+  .engagement-item__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 48px;
+    color: var(--color-text-muted);
+    font-size: 1.5rem;
+    transition:
+      color var(--transition-medium),
+      transform var(--transition-medium);
+  }
+
+  .engagement-item:hover .engagement-item__arrow {
+    color: var(--color-accent);
+    transform: translate(4px, -4px);
+  }
+
+
+  /* Mobile */
+
+  @media (max-width: 768px) {
+
+  .services-engagement__intro {
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  padding-top: 56px;
+  padding-bottom: 28px;
+}
+
+    .services-engagement__label {
+      padding-top: 0;
+    }
+
+    .services-engagement h2 {
+      margin-bottom: var(--space-lg);
+    }
+
+    .services-engagement__heading > p {
+      font-size: 1rem;
+    }
+
+    .engagement-item {
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: var(--space-md);
+  padding-block: 32px;
+}
+
+    .engagement-item:hover {
+      padding-left: 8px;
+    }
+
+    .engagement-item__number {
+      padding-top: 5px;
+    }
+
+    .engagement-item__content {
+      max-width: none;
+    }
+
+    .engagement-item h3 {
+      font-size: clamp(1.8rem, 8vw, 2.5rem);
+    }
+
+    .engagement-item__arrow {
+      grid-column: 2;
+      justify-content: flex-start;
+      min-height: auto;
+      margin-top: var(--space-sm);
+    }
+
+  }
+</style>

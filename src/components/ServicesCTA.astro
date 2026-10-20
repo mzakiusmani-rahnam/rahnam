@@ -1,0 +1,174 @@
+<section class="services-cta">
+  <div class="container">
+
+    <div class="services-cta__content reveal">
+
+      <div class="services-cta__label">
+        <span class="eyebrow">Start a Conversation</span>
+      </div>
+
+      <div class="services-cta__main">
+
+        <h2>
+          Know something needs
+          <span>to change?</span>
+          Let's work out what comes next.
+        </h2>
+
+        <p>
+          Whether the challenge is growth, commerce, technology or execution,
+          the first step is understanding where the business is today — and
+          what needs to change to move it forward.
+        </p>
+
+        <a href="/contact" class="button">
+          Start a conversation
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="services-cta__footer">
+
+      <span>08 — RAHNAM</span>
+
+      <span>Services</span>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .services-cta {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+
+  /* Subtle editorial detail */
+
+  .services-cta::after {
+    content: "";
+    position: absolute;
+    right: -180px;
+    bottom: -220px;
+    width: 520px;
+    height: 520px;
+    border: 1px solid rgba(17, 24, 32, 0.08);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+
+  /* Main content */
+
+  .services-cta__content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    position: relative;
+    z-index: 1;
+  }
+
+  .services-cta__label {
+    padding-top: 10px;
+  }
+
+  .services-cta__main {
+    max-width: 1000px;
+  }
+
+  .services-cta h2 {
+    max-width: 900px;
+    margin-bottom: 24px;
+    font-size: clamp(2.8rem, 5.5vw, 5.5rem);
+    line-height: 0.98;
+  }
+
+  .services-cta h2 span {
+    display: block;
+    color: var(--color-text-muted-dark);
+  }
+
+  .services-cta__main > p {
+    max-width: 650px;
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+
+  /* Light button */
+
+  .services-cta .button {
+    border-color: var(--color-border-light);
+    color: var(--color-text-dark);
+  }
+
+  .services-cta .button:hover {
+    border-color: var(--color-text-dark);
+    background: var(--color-text-dark);
+    color: var(--color-bg-light);
+  }
+
+
+  /* Footer marker */
+
+  .services-cta__footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 44px;
+    padding-top: 14px;
+    border-top: 1px solid var(--color-border-light);
+    color: var(--color-text-muted-dark);
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+
+  /* Mobile */
+
+  @media (max-width: 768px) {
+
+    .services-cta {
+      padding-block: 56px;
+    }
+
+    .services-cta__content {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .services-cta__label {
+      padding-top: 0;
+    }
+
+    .services-cta h2 {
+      margin-bottom: 24px;
+      font-size: clamp(2.7rem, 11vw, 4rem);
+    }
+
+    .services-cta__main > p {
+      margin-bottom: 24px;
+      font-size: 1rem;
+    }
+
+    .services-cta__footer {
+      margin-top: 56px;
+    }
+
+  }
+</style>

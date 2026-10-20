@@ -1,0 +1,204 @@
+<section class="case-study-results">
+    <div class="container">
+        <div class="case-study-results__header reveal">
+            <div class="case-study-results__label">
+                <span class="eyebrow">Transformation Scope</span>
+            </div>
+
+            <div class="case-study-results__intro">
+                <h2>
+                    Connected work
+                    <span>across commerce,</span>
+                    <span>technology and operations.</span>
+                </h2>
+
+                <p>
+                    The engagement covered ecommerce foundations, storefront
+                    experience, international readiness and operating processes.
+                    Performance results require client evidence and approval.
+                </p>
+            </div>
+        </div>
+
+        <div class="case-study-results__metrics">
+            <article class="result-metric reveal">
+                <h3>Commerce</h3>
+                <p>Platform foundations for international markets and ongoing optimisation.</p>
+            </article>
+
+            <article class="result-metric reveal">
+                <h3>Experience</h3>
+                <p>Navigation, product discovery, mobile UX and customer journeys.</p>
+            </article>
+
+            <article class="result-metric reveal">
+                <h3>Operations</h3>
+                <p>Processes, reporting and repetitive ecommerce workflows.</p>
+            </article>
+
+            <article class="result-metric reveal">
+                <h3>Technology</h3>
+                <p>Systems and workflows designed to support ongoing improvement.</p>
+            </article>
+        </div>
+
+        <div class="case-study-results__footer">
+            <span>RAHNAM / RESULTS</span>
+            <span>01</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .case-study-results {
+        position: relative;
+        overflow: hidden;
+        padding: 64px 0 0;
+        background: var(--color-bg);
+        color: var(--color-text);
+    }
+
+    /* Header */
+
+    .case-study-results__header {
+        display: grid;
+        grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+        gap: var(--space-xl);
+        padding-bottom: 44px;
+    }
+
+    .case-study-results__label {
+        padding-top: 10px;
+    }
+
+    .case-study-results__intro {
+        max-width: 980px;
+    }
+
+    .case-study-results h2 {
+        max-width: 900px;
+        margin: 0;
+        font-size: clamp(3rem, 5.2vw, 5.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+        font-weight: 450;
+    }
+
+    .case-study-results h2 span {
+        display: block;
+        color: var(--color-text-muted);
+    }
+
+    .case-study-results__intro > p {
+        max-width: 680px;
+        margin-top: 28px;
+        margin-bottom: 0;
+        color: var(--color-text-muted);
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+
+    /* Metrics */
+
+    .case-study-results__metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .result-metric {
+        min-width: 0;
+        padding: 30px 24px 32px;
+        border-right: 1px solid var(--color-border);
+    }
+
+    .result-metric:first-child {
+        padding-left: 0;
+    }
+
+    .result-metric:last-child {
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    .result-metric h3 {
+        margin: 0 0 12px;
+        font-size: clamp(2.6rem, 4vw, 4.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.045em;
+        font-weight: 450;
+    }
+
+    .result-metric p {
+        max-width: 180px;
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: 0.78rem;
+        line-height: 1.5;
+    }
+
+    /* Footer */
+
+    .case-study-results__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--space-xl);
+        padding-top: var(--space-md);
+        border-top: 1px solid var(--color-border);
+        color: var(--color-text-muted);
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+    }
+
+    /* Mobile */
+
+    @media (max-width: 768px) {
+        .case-study-results {
+            padding-top: 64px;
+        }
+
+        .case-study-results__header {
+            grid-template-columns: 1fr;
+            gap: var(--space-lg);
+            padding-bottom: 44px;
+        }
+
+        .case-study-results__label {
+            padding-top: 0;
+        }
+
+        .case-study-results h2 {
+            font-size: clamp(2.8rem, 12vw, 4.5rem);
+        }
+
+        .case-study-results__metrics {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .result-metric,
+        .result-metric:first-child,
+        .result-metric:last-child {
+            padding: 24px 16px;
+            border-right: 1px solid var(--color-border);
+        }
+
+        .result-metric:nth-child(2n) {
+            border-right: 0;
+        }
+
+        .result-metric:nth-child(-n + 2) {
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .result-metric h3 {
+            font-size: clamp(2.4rem, 10vw, 3.5rem);
+        }
+
+        .case-study-results__footer {
+            margin-top: var(--space-lg);
+        }
+    }
+</style>

@@ -1,0 +1,270 @@
+<section class="about-section" id="about">
+  <div class="about-container">
+
+    <div class="about-intro">
+      <div class="about-label">
+        <span class="about-line"></span>
+        <span>ABOUT RAHNAM</span>
+      </div>
+
+      <div class="about-main">
+        <h2>
+          Experience where
+          <span> strategy meets execution.</span>
+        </h2>
+
+        <p class="about-lead">
+          RAHNAM brings together strategic thinking, ecommerce experience,
+          digital technology, and operational discipline to help businesses
+          move from ambition to measurable progress.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-details">
+
+      <div class="about-statement">
+        <p>
+          Built from more than two decades of working inside digital
+          businesses, RAHNAM understands the difference between advice
+          that sounds good and work that actually moves a business forward.
+        </p>
+      </div>
+
+      <div class="about-points">
+
+        <div class="about-point">
+          <span class="about-number">01</span>
+          <div>
+            <h3>Commercial thinking</h3>
+            <p>
+              Connecting digital decisions to revenue, customers,
+              markets, and sustainable growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-number">02</span>
+          <div>
+            <h3>Operator perspective</h3>
+            <p>
+              Understanding the realities of teams, systems, processes,
+              platforms, and day-to-day execution.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-point">
+          <span class="about-number">03</span>
+          <div>
+            <h3>Technology with purpose</h3>
+            <p>
+              Using technology, automation, and AI where they create
+              genuine business value — not unnecessary complexity.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="about-footer">
+      <span>RAHNAM / STRATEGY · COMMERCE · DIGITAL</span>
+
+      <a href="/about">
+        More about RAHNAM
+        <span>↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .about-section {
+  background: #f1f0ec;
+  color: #0b1118;
+  padding: 48px 0 56px;
+}
+  .about-container {
+    width: min(1100px, calc(100% - 80px));
+    margin: 0 auto;
+  }
+
+  .about-intro {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 12px;
+    color: #607080;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+  }
+
+  .about-line {
+    width: 28px;
+    height: 1px;
+    background: #8c969e;
+  }
+
+  .about-main h2 {
+    margin: 0;
+    max-width: 800px;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: 0.98;
+    font-weight: 400;
+    letter-spacing: -0.055em;
+  }
+
+  .about-main h2 span {
+    color: #7d8791;
+  }
+
+  .about-lead {
+    max-width: 650px;
+    margin: 48px 0 0;
+    color: #506070;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .about-divider {
+    height: 1px;
+    background: #d2d0ca;
+    margin: 72px 0 48px;
+  }
+
+  .about-details {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+  }
+
+  .about-statement p {
+    max-width: 390px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.45;
+    letter-spacing: -0.025em;
+  }
+
+  .about-points {
+    border-top: 1px solid #d2d0ca;
+  }
+
+  .about-point {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 24px;
+    padding: 28px 0;
+    border-bottom: 1px solid #d2d0ca;
+  }
+
+  .about-number {
+    padding-top: 5px;
+    color: #71808d;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .about-point h3 {
+    margin: 0 0 9px;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  .about-point p {
+    max-width: 520px;
+    margin: 0;
+    color: #61707d;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid #d2d0ca;
+    color: #71808d;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .about-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #0b1118;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  .about-footer a span {
+    font-size: 15px;
+    transition: transform 180ms ease;
+  }
+
+  .about-footer a:hover span {
+    transform: translate(3px, -3px);
+  }
+
+  @media (max-width: 800px) {
+    .about-section {
+      padding: 72px 0 64px;
+    }
+
+    .about-container {
+      width: min(100% - 40px, 1100px);
+    }
+
+    .about-intro {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .about-main h2 {
+      font-size: clamp(46px, 13vw, 68px);
+    }
+
+    .about-lead {
+      margin-top: 32px;
+      font-size: 16px;
+    }
+
+    .about-divider {
+      margin: 56px 0 40px;
+    }
+
+    .about-details {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .about-statement p {
+      font-size: 22px;
+    }
+
+    .about-footer {
+      align-items: flex-start;
+      gap: 24px;
+      flex-direction: column;
+      margin-top: 48px;
+    }
+  }
+</style>

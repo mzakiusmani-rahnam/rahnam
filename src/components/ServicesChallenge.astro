@@ -1,0 +1,257 @@
+<section class="services-challenge section--light">
+  <div class="container">
+
+    <div class="services-challenge__intro reveal">
+      <div class="services-challenge__label">
+        <span class="eyebrow">The Challenge</span>
+      </div>
+
+      <div class="services-challenge__heading">
+        <h2>
+          Growth creates complexity.
+          <span>Complexity creates gaps.</span>
+        </h2>
+
+        <div class="services-challenge__copy">
+          <p>
+            Digital businesses rarely struggle because they lack another
+            tool, another platform or another marketing channel.
+          </p>
+
+          <p>
+            The challenge is what happens when strategy, commerce,
+            technology and operations start moving in different directions.
+          </p>
+
+          <p>
+            Teams stay busy. Systems multiply. Decisions become harder.
+            And opportunities get lost between functions.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="services-challenge__points">
+
+      <article class="challenge-point reveal">
+        <div class="challenge-point__number">01</div>
+
+        <div class="challenge-point__content">
+          <span class="challenge-point__label">Direction</span>
+
+          <h3>Too many decisions, not enough clarity.</h3>
+
+          <p>
+            Business priorities aren't always translated into a clear
+            digital roadmap.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="challenge-point reveal">
+        <div class="challenge-point__number">02</div>
+
+        <div class="challenge-point__content">
+          <span class="challenge-point__label">Complexity</span>
+
+          <h3>More systems. More markets. More moving parts.</h3>
+
+          <p>
+            Growth introduces platforms, processes, teams and markets
+            that become increasingly difficult to connect.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="challenge-point reveal">
+        <div class="challenge-point__number">03</div>
+
+        <div class="challenge-point__content">
+          <span class="challenge-point__label">Execution</span>
+
+          <h3>Good plans don't always become good outcomes.</h3>
+
+          <p>
+            The gap between strategy and day-to-day execution can slow
+            growth and make improvement harder to sustain.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .services-challenge {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(40px, 4vw, 64px) 0 0;
+}
+
+
+  /* Intro */
+
+  .services-challenge__intro {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+  .services-challenge__label {
+    padding-top: 12px;
+  }
+
+  .services-challenge__heading {
+    max-width: 1000px;
+  }
+
+  .services-challenge h2 {
+    max-width: 900px;
+    margin-bottom: 28px;
+}
+
+  .services-challenge h2 span {
+    display: block;
+    color: var(--color-text-muted-dark);
+  }
+
+  .services-challenge__copy {
+    max-width: 680px;
+  }
+
+  .services-challenge__copy p {
+    margin-bottom: var(--space-md);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .services-challenge__copy p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* Challenge points */
+
+  .services-challenge__points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+
+  .challenge-point {
+    min-height: 240px;
+    padding: 32px 28px 36px;
+    border-right: 1px solid var(--color-border-light);
+}
+
+  .challenge-point:first-child {
+    padding-left: 0;
+  }
+
+  .challenge-point:last-child {
+    padding-right: 0;
+    border-right: 0;
+  }
+
+
+  /* Number */
+
+  .challenge-point__number {
+    margin-bottom: 32px;
+    color: var(--color-text-muted-dark);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+
+  /* Content */
+
+  .challenge-point__label {
+    display: block;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text-muted-dark);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .challenge-point h3 {
+    max-width: 340px;
+    margin-bottom: var(--space-md);
+  }
+
+  .challenge-point p {
+    max-width: 340px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+
+  /* Mobile */
+
+  @media (max-width: 768px) {
+
+     .services-challenge {
+  padding: 40px 0 0;
+}
+
+    .services-challenge__intro {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        padding-bottom: 32px;
+    }
+
+     .services-challenge__label {
+        padding-top: 0;
+    }
+
+    .services-challenge h2 {
+        margin-bottom: 24px;
+    }
+
+    .services-challenge__copy p {
+        font-size: 1rem;
+    }
+
+
+    .services-challenge__points {
+        grid-template-columns: 1fr;
+    }
+
+    .challenge-point,
+    .challenge-point:first-child,
+    .challenge-point:last-child {
+        min-height: auto;
+        padding: 28px 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--color-border-light);
+    }
+
+     .challenge-point:last-child {
+        border-bottom: 0;
+    }
+
+    .challenge-point__number {
+        margin-bottom: 24px;
+    }
+
+    .challenge-point h3 {
+        max-width: none;
+    }
+
+    .challenge-point p {
+        max-width: none;
+    }
+}
+</style>

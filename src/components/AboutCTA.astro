@@ -1,0 +1,114 @@
+<section class="about-cta">
+  <div class="container">
+
+    <div class="about-cta__content reveal">
+
+      <div class="about-cta__label">
+        <span class="eyebrow">START A CONVERSATION</span>
+      </div>
+
+      <div class="about-cta__main">
+        <h2>
+          Good digital businesses
+          <span>don't stand still.</span>
+        </h2>
+
+        <p>
+          Whether the challenge is growth, commerce, technology or
+          execution, the next step starts with understanding where the
+          business is today — and what needs to change.
+        </p>
+
+        <a href="/contact" class="button button--light">
+          Start a conversation
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="about-cta__footer">
+      <span>06 — RAHNAM</span>
+      <span>About</span>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .about-cta {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-light);
+    color: var(--color-text-dark);
+  }
+
+  .about-cta__content {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.7fr) minmax(0, 2fr);
+    gap: var(--space-xl);
+    padding: 48px 0 32px;
+}
+
+  .about-cta__label {
+    padding-top: 12px;
+  }
+
+  .about-cta__main {
+    max-width: 1000px;
+  }
+
+  .about-cta h2 {
+    max-width: 900px;
+    margin: 0 0 var(--space-xl);
+    font-size: clamp(3rem, 6vw, 6rem);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+  }
+
+  .about-cta h2 span {
+    display: block;
+    color: var(--color-text-dark-muted);
+  }
+
+  .about-cta p {
+    max-width: 700px;
+    margin: 0 0 var(--space-xl);
+    font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+    line-height: 1.7;
+    color: var(--color-text-dark-muted);
+  }
+
+  .about-cta .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .about-cta__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-md);
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-dark-muted);
+  }
+
+  @media (max-width: 768px) {
+    .about-cta__content {
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      padding: 48px 0 40px;
+    }
+
+    .about-cta h2 {
+      font-size: clamp(3rem, 11vw, 5rem);
+    }
+  }
+</style>

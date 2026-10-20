@@ -1,0 +1,95 @@
+<section class="insights-hero">
+  <div class="container">
+
+    <div class="insights-hero__content reveal">
+
+      <span class="eyebrow">INSIGHTS</span>
+
+      <h1>
+        Thinking about
+        <span>digital growth.</span>
+      </h1>
+
+      <p>
+        Perspectives on ecommerce, technology, customer experience,
+        AI and the decisions that help digital businesses grow with
+        greater clarity.
+      </p>
+
+    </div>
+
+
+    <div class="insights-hero__footer">
+      <span>01 — RAHNAM</span>
+      <span>Insights</span>
+    </div>
+
+  </div>
+</section>
+
+
+<style>
+  .insights-hero {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .insights-hero__content {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 64px;
+}
+
+  .insights-hero h1 {
+    max-width: 950px;
+    margin: var(--space-lg) 0 var(--space-lg);
+    font-size: clamp(3.5rem, 7vw, 7rem);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+    font-weight: 500;
+  }
+
+  .insights-hero h1 span {
+    display: block;
+    color: var(--color-text-muted);
+  }
+
+  .insights-hero p {
+    max-width: 720px;
+    margin: 0;
+    font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+    line-height: 1.65;
+    color: var(--color-text-muted);
+  }
+
+  .insights-hero__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 768px) {
+    .insights-hero__content {
+  min-height: 0;
+  padding-block: 48px;
+}
+
+    .insights-hero h1 {
+      font-size: clamp(3rem, 12vw, 5rem);
+    }
+
+    .insights-hero p {
+      font-size: 1rem;
+    }
+  }
+</style>

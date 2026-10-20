@@ -1,0 +1,314 @@
+<section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="container hero-container">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span></span>
+        Strategic Digital Growth
+      </div>
+
+      <h1 class="hero-title">
+        <span class="hero-line reveal">Digital businesses</span>
+        <span class="hero-line reveal hero-line--muted"> need direction. </span>
+      </h1>
+
+      <div class="hero-bottom">
+        <p class="hero-description reveal">
+          RAHNAM helps ambitious businesses make better digital decisions —
+          connecting strategy, commerce, technology, and execution.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="/services" class="button">
+            Explore services
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-index reveal" aria-hidden="true">
+      <span>01</span>
+      <span class="hero-index-line"></span>
+      <span>RAHNAM</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    overflow: visible;
+
+    background: var(--color-bg);
+
+    padding-block: 72px 64px;
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+
+    background-image: linear-gradient(
+      to right,
+      transparent 0,
+      transparent calc(50% - 0.5px),
+      rgba(157, 165, 174, 0.07) calc(50% - 0.5px),
+      rgba(157, 165, 174, 0.07) 50%,
+      transparent 50%,
+      transparent 100%
+    );
+
+    pointer-events: none;
+  }
+
+  .hero-grid::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 13%;
+    width: 1px;
+    height: 100%;
+
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(157, 165, 174, 0.1) 25%,
+      rgba(157, 165, 174, 0.1) 75%,
+      transparent
+    );
+  }
+
+  .hero-container {
+    position: relative;
+
+    width: min(
+      calc(100% - (var(--container-padding) * 2)),
+      var(--container-width)
+    );
+  }
+
+  .hero-content {
+    max-width: 1050px;
+  }
+
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .hero-eyebrow span {
+    width: 32px;
+    height: 1px;
+
+    background: var(--color-text-muted);
+  }
+
+  .hero-title {
+    margin: 0;
+
+    font-size: clamp(3.5rem, 6.8vw, 6.8rem);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+    font-weight: 450;
+  }
+
+  .hero-line {
+    display: block;
+  }
+
+  .hero-line--muted {
+    color: var(--color-text-muted);
+  }
+
+  .hero-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 80px;
+
+  margin-top: 44px;
+  padding-left: clamp(0px, 12vw, 150px);
+}
+
+  .hero-description {
+    max-width: 520px;
+    margin: 0;
+
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+
+    flex-shrink: 0;
+    padding-bottom: 6px;
+  }
+
+  .hero-actions .button {
+    min-width: 172px;
+  }
+
+  .hero-actions .button span {
+    font-size: 1rem;
+    transition: transform var(--transition-medium);
+  }
+
+  .hero-actions .button:hover span {
+    transform: translate(2px, -2px);
+  }
+
+  .hero-text-link {
+    color: var(--color-text-muted);
+
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    transition: color var(--transition-fast);
+  }
+
+  .hero-text-link span {
+    display: inline-block;
+    margin-left: 6px;
+
+    transition: transform var(--transition-medium);
+  }
+
+  .hero-text-link:hover {
+    color: var(--color-text);
+  }
+
+  .hero-text-link:hover span {
+    transform: translateX(4px);
+  }
+
+  .hero-index {
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--color-text-muted);
+
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+  }
+
+  .hero-index-line {
+    width: 50px;
+    height: 1px;
+
+    background: var(--color-border);
+  }
+
+  /* Entrance timing */
+
+  .hero-eyebrow.reveal {
+    transition-delay: 100ms;
+  }
+
+  .hero-line:nth-child(1).reveal {
+    transition-delay: 180ms;
+  }
+
+  .hero-line:nth-child(2).reveal {
+    transition-delay: 280ms;
+  }
+
+  .hero-description.reveal {
+    transition-delay: 420ms;
+  }
+
+  .hero-actions.reveal {
+    transition-delay: 500ms;
+  }
+
+  .hero-index.reveal {
+    transition-delay: 650ms;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      min-height: auto;
+    }
+
+    .hero-bottom {
+      align-items: flex-start;
+      flex-direction: column;
+
+      margin-top: 40px;
+      padding-left: 0;
+    }
+
+    .hero-actions {
+      flex-wrap: wrap;
+    }
+
+    .hero-index {
+      position: static;
+
+      margin-top: 48px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero {
+      padding-block: 48px 40px;
+    }
+
+    .hero-container {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .hero-title {
+      font-size: clamp(3.2rem, 15vw, 5.5rem);
+      line-height: 0.92;
+    }
+
+    .hero-bottom {
+      margin-top: 44px;
+    }
+
+    .hero-description {
+      max-width: 100%;
+    }
+
+    .hero-actions {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .hero-actions .button {
+      width: 100%;
+    }
+
+    .hero-index {
+      margin-top: 40px;
+    }
+  }
+</style>
