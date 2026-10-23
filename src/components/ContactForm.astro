@@ -91,7 +91,7 @@
         </button>
 
         <span class="contact-form__note">
-          Message delivery is not connected yet.
+         Your enquiry will be sent securely.
         </span>
       </div>
 
@@ -107,21 +107,91 @@
 </section>
 
 <script>
-  const contactForm = document.querySelector<HTMLFormElement>(
-    ".contact-form__form",
-  );
-  const contactStatus = document.querySelector<HTMLElement>(
-    ".contact-form__status",
+  
+const contactForm = document.querySelector<HTMLFormElement>(
+  ".contact-form__form",
+);
+
+const contactStatus = document.querySelector<HTMLElement>(
+  ".contact-form__status",
+);
+
+const contactSubmitButton =
+  contactForm?.querySelector<HTMLButtonElement>(
+    'button[type="submit"]',
   );
 
-  contactForm?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (contactStatus) {
-      contactStatus.textContent =
-        "Your message was not sent because delivery is not connected yet.";
-      contactStatus.hidden = false;
+const contactFunctionUrl =
+  "https://vfw6ibjnxhwaf66rvycbfezmmu0moplg.lambda-url.us-east-1.on.aws/";
+
+contactForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  if (!contactForm || !contactStatus || !contactSubmitButton) {
+    return;
+  }
+
+  if (!contactForm.reportValidity()) {
+    return;
+  }
+
+  const formData = new FormData(contactForm);
+
+  const payload = {
+    name: String(formData.get("name") ?? "").trim(),
+    email: String(formData.get("email") ?? "").trim(),
+    company: String(formData.get("company") ?? "").trim(),
+    challenge: String(formData.get("challenge") ?? "").trim(),
+    message: String(formData.get("message") ?? "").trim(),
+  };
+
+  if (
+    !payload.name ||
+    !payload.email ||
+    !payload.message ||
+    payload.name.length > 120 ||
+    payload.email.length > 254 ||
+    payload.company.length > 200 ||
+    payload.challenge.length > 100 ||
+    payload.message.length > 5000
+  ) {
+    contactStatus.textContent =
+      "Please check your details and keep your message under 5,000 characters.";
+    contactStatus.hidden = false;
+    return;
+  }
+
+  contactSubmitButton.disabled = true;
+  contactStatus.textContent = "Sending your message…";
+  contactStatus.hidden = false;
+
+  try {
+    const response = await fetch(contactFunctionUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const result = await response.json().catch(() => null);
+
+    if (!response.ok || result?.success !== true) {
+      throw new Error("Message delivery failed.");
     }
-  });
+
+    contactStatus.textContent =
+      "Thank you for reaching out. Your message has been sent successfully.";
+
+    contactForm.reset();
+  } catch {
+    contactStatus.textContent =
+      "We couldn't send your message just now. Please try again shortly.";
+  } finally {
+    contactSubmitButton.disabled = false;
+  }
+});
+
 </script>
 
 <style>
