@@ -344,8 +344,9 @@ p {
   :root {
     --container-padding: 20px;
 
-    --space-3xl: 96px;
-    --space-4xl: 120px;
+    --space-2xl: 68px;
+    --space-3xl: 84px;
+    --space-4xl: 104px;
   }
 
   .section {
