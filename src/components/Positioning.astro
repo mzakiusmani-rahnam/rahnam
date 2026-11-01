@@ -35,130 +35,138 @@
 </section>
 
 <style>
-  .positioning {
-    background: var(--color-surface);
-    color: var(--color-text);
-  }
-
-  .positioning-container {
-  padding-top: clamp(48px, 5vw, 72px);
-  padding-bottom: clamp(64px, 6vw, 88px);
+  
+.positioning {
+  background: var(--color-surface);
+  color: var(--color-text);
 }
 
-  .positioning-label {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.positioning-container {
+  padding-top: clamp(48px, 5vw, 72px);
+  padding-bottom: clamp(56px, 5.5vw, 80px);
+}
 
-    margin-bottom: 36px;
+.positioning-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: var(--color-text-muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
 
-    color: var(--color-text-muted);
+.positioning-label span {
+  width: 32px;
+  height: 1px;
+  background: var(--color-text-muted);
+}
 
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
+.positioning-content {
+  max-width: 1200px;
+}
 
-  .positioning-label span {
-    width: 32px;
-    height: 1px;
-    background: var(--color-text-muted);
-  }
+.positioning-title {
+  max-width: 1100px;
+  margin: 0;
+  font-size: clamp(2.6rem, 5vw, 5.4rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  font-weight: 450;
+}
 
-  .positioning-content {
-    max-width: 1200px;
-  }
+.positioning-title span {
+  display: block;
+  margin-top: 0.1em;
+  color: var(--color-text-muted);
+}
 
-  .positioning-title {
-    max-width: 1100px;
-
-    margin: 0;
-
-    font-size: clamp(2.6rem, 5vw, 5.4rem);
-    line-height: 1.02;
-    letter-spacing: -0.045em;
-    font-weight: 450;
-  }
-
-  .positioning-title span {
-    display: block;
-    margin-top: 0.15em;
-
-    color: var(--color-text-muted);
-  }
-
-  .positioning-bottom {
+.positioning-bottom {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
-  gap: 60px;
-
-  margin-top: 40px;
+  gap: 48px;
+  margin-top: 32px;
   padding-left: clamp(0px, 12vw, 150px);
 }
 
+.positioning-description {
+  max-width: 560px;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.positioning-mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+}
+
+.positioning-line {
+  width: 50px;
+  height: 1px;
+  background: var(--color-border);
+}
+
+@media (max-width: 800px) {
+  .positioning-label {
+    margin-bottom: 28px;
+  }
+
+  .positioning-title {
+    font-size: clamp(2.4rem, 8vw, 4rem);
+    line-height: 1;
+  }
+
+  .positioning-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .positioning-container {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .positioning-label {
+    margin-bottom: 24px;
+  }
+
+  .positioning-title {
+    font-size: clamp(2.2rem, 9.5vw, 3.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+  }
+
+  .positioning-title span {
+  display: inline;
+  margin-top: 0;
+  margin-left: 0.18em;
+  color: var(--color-text-muted);
+}
+
+  .positioning-bottom {
+    gap: 20px;
+    margin-top: 28px;
+  }
+
   .positioning-description {
-    max-width: 560px;
-
-    margin: 0;
-
-    font-size: 1rem;
-    line-height: 1.75;
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.7;
   }
+}
 
-  .positioning-mark {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-
-    flex-shrink: 0;
-
-    color: var(--color-text-muted);
-
-    font-size: 0.65rem;
-    letter-spacing: 0.14em;
-  }
-
-  .positioning-line {
-    width: 50px;
-    height: 1px;
-
-    background: var(--color-border);
-  }
-
-  @media (max-width: 800px) {
-    .positioning-label {
-      margin-bottom: 36px;
-    }
-
-    .positioning-title {
-      font-size: clamp(2.4rem, 8vw, 4rem);
-    }
-
-    .positioning-bottom {
-      align-items: flex-start;
-      flex-direction: column;
-
-      margin-top: 48px;
-      padding-left: 0;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .positioning-container {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    .positioning-title {
-      font-size: clamp(2.2rem, 10vw, 3.4rem);
-      line-height: 1.05;
-    }
-
-    .positioning-bottom {
-      margin-top: 48px;
-    }
-  }
 </style>
